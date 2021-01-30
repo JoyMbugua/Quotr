@@ -24,6 +24,10 @@
     </form>
 </div>
 <div class="column">
-    <p class="quotes-container" *ngFor="let item of quotes">{{ item.quote }}</p>
+    <div class="quotes-container" *ngFor="let item of quotes">
+        {{ item.name }} posted: 
+        <app-quote-details [quote]='item'></app-quote-details>
+    </div>
+    
 </div>
 </div>
