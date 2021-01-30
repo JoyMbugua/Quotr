@@ -9,8 +9,17 @@
 <div class="container light">
 <div class="column">
     <p class="form-caption">Enter your favorite quote:</p>
+   
+    <!-- the form -->
     <form>
+        <label for="name">Name:</label>
+        <input type="text" class="regular" [(ngModel)]="user" placeholder="Name">
+        <br>
+       <label for="quote">Entry:</label>
         <input type="text" class="regular" placeholder="Quote..." [(ngModel)]="quoteText">
+        <br>
+        <label for="author">Author:</label>
+        <input type="text" class="regular" [(ngModel)]="author" placeholder="Author">
         <input type="submit" class="submit" value="Add Quote" (click)="addQuote">
     </form>
 </div>
