@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "Quotr"
+  "defaultProject": "Quotr",
+  "cli": {
+    "analytics": "33655bc1-7f60-48f9-a6c7-385c94a01eea"
+  }
 }
