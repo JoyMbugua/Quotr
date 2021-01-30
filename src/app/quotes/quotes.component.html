@@ -1,1 +1,20 @@
-<p>quotes works!</p>
+<div class="container dark">
+    <div class="column">
+        <p>Add a Quote</p>
+    </div>
+    <div class="column">
+        <p>Quote list {{ quoteCount }} quotes</p>
+    </div>
+</div>
+<div class="containerlight">
+<div class="column">
+    <p class="form-caption">Enter your favorite quote:</p>
+    <form>
+        <input type="text" class="regular" placeholder="Quote..." [(ngModel)]="quoteText">
+        <input type="submit" class="submit" value="Add Quote" (click)="addQuote">
+    </form>
+</div>
+<div class="column">
+    <p class="quotes-container" *ngFor="let item of quotes">{{ item.quote }}</p>
+</div>
+</div>
