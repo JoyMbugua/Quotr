@@ -15,7 +15,8 @@ quotes: Quote[] = [
 ]
   addNewQuote(quote){
     quote.postedDate = new Date();
-    this.quotes.push(quote);
+    this.quotes.unshift(quote);
+    
   }
   constructor() { }
 
