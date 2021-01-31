@@ -18,6 +18,13 @@ quotes: Quote[] = [
     this.quotes.unshift(quote);
     
   }
+  completeQuote(isComplete, index){
+
+    let deleteAction = confirm(`Are you sure you want to remove this quote?`);
+    if(deleteAction){
+      this.quotes.splice(index,1);
+    }
+  }
   constructor() { }
 
   ngOnInit(): void {
