@@ -16,6 +16,10 @@ quotes: Quote[] = [
   addNewQuote(quote){
     quote.postedDate = new Date();
     this.quotes.unshift(quote);
+    quote.name = '';
+    quote.description = '';
+    quote.author = '';
+
     
   }
   completeQuote(isComplete, index){

@@ -19,7 +19,7 @@
     <div class="quotes-container" *ngFor="let item of quotes; let i = index">
         <div class="card">
             <div class="quote-info">
-                {{ item.name }} posted: {{ item.postedDate|date }}
+                {{ item.name }} posted: {{ item.postedDate|timePassed }}
         <app-quote-details [quote]='item' (isComplete)="completeQuote($event, i)"></app-quote-details>
             </div>
         </div>

@@ -13,9 +13,7 @@ export class TimePassedPipe implements PipeTransform {
 
       const seconds = Math.abs(Math.floor((theDate - value) / 1000)); //today minus the day posted
 
-      if(seconds < 30){
-        return 'Just now'
-      } else {
+
            //periods in seconds
       const intervals = {
         year: 31536000,
@@ -31,6 +29,7 @@ export class TimePassedPipe implements PipeTransform {
       for(const i in intervals){ //each item in the intervals object
         //divide each by the difference in seconds and assign it to counter
         counter = Math.floor(seconds / intervals[i]);
+        
         if(counter > 0){
           if(counter === 1){
             return `${counter} ${i} ago`;
@@ -38,7 +37,6 @@ export class TimePassedPipe implements PipeTransform {
             return `${counter} ${i}s ago`;
           }
         }
-      }
       }
     }
 
