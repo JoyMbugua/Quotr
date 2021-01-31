@@ -6,7 +6,9 @@
     <br>
 
    <label for="description">Entry:</label>
-    <input type="text" class="regular" placeholder="Quote..." [(ngModel)]="newQuote.description" #description='ngModel' name='description' required>
+    <textarea type="text" class="regular" rows="8" placeholder="Quote..." [(ngModel)]="newQuote.description" #description='ngModel' name='description' required>
+        
+    </textarea>
     <br>
 
     <label for="author">Author:</label>

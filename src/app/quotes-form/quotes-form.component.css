@@ -1,33 +1,15 @@
-.container {
-    display: grid;
-    grid-template-columns: 50% auto;
-}
-.column {
-    padding: .4em 1.3em;
-}
-.dark {
-    background: #2F4F4F;
-    color: wheat;
-}
-.light {
-    background: #8FBC8F;;
-}
-input.regular {
+
+.regular {
     border: 0;
     padding: 1em;
     width: 80%;
     margin-bottom: 2em;
 }
-input.submit {
+.submit {
     border: 0;
     display: block;
     padding: 1em 3 em;
-    background: white;
+    background: red;
     color: #333;
     margin-bottom: 1em;
-}
-.quotes-container {
-    background: rgb(52, 138, 71);
-    padding: .6em;
-    font-weight: bold;
 }
