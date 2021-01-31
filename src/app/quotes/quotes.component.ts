@@ -13,7 +13,10 @@ quotes: Quote[] = [
   new Quote("Njuguna Mwangi", "You may be disappointed if you fail, but you are doomed if you don't try.", "Beverly Sills", new Date(2021,0,13)),
   new Quote("Ada Lovelace", "You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.", "Steve Case", new Date(2021,0,30))
 ]
-  
+  addNewQuote(quote){
+    quote.postedDate = new Date();
+    this.quotes.push(quote);
+  }
   constructor() { }
 
   ngOnInit(): void {
