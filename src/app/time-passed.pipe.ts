@@ -6,12 +6,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class TimePassedPipe implements PipeTransform {
 
   transform(value: any): any {
-    if(value){
-
-      let today: Date = new Date(); //asin today
-      let theDate: any = new Date(today.getFullYear(), today.getMonth(), today.getDate());
-
-      const seconds = Math.abs(Math.floor((theDate - value) / 1000)); //today minus the day posted
+ 
+      let thatDay = new Date(value);
+      let now: Date = new Date(); //asin today
+  
+      const seconds = Math.round(Math.abs(now.getTime() - thatDay.getTime()) / 1000); //today minus the day posted
 
 
            //periods in seconds
@@ -25,7 +24,10 @@ export class TimePassedPipe implements PipeTransform {
         second: 1
       };
 
-      let counter;
+      if(seconds < 30){
+        return 'a few seconds ago'
+      } else {
+        let counter;
       for(const i in intervals){ //each item in the intervals object
         //divide each by the difference in seconds and assign it to counter
         counter = Math.floor(seconds / intervals[i]);
@@ -38,9 +40,10 @@ export class TimePassedPipe implements PipeTransform {
           }
         }
       }
-    }
+      }
+    
 
-    // return value;
+    return seconds;
   }
 
 }

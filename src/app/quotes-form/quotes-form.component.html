@@ -1,5 +1,5 @@
 
-<form (ngSubmit)='submitQuote()' #formQuote='ngForm'>
+<form (ngSubmit)='submitQuote()' id='myForm' #formQuote='ngForm'>
     
     <label for="name">Name:</label>
     <input type="text" class="regular" [(ngModel)]="newQuote.name" #name='ngModel' placeholder="Name" required name="name">
