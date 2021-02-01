@@ -8,7 +8,7 @@
 .light {
     background: #8FBC8F;
     min-height: 100vh;
-    background: linear-gradient(to right top, #8FBC8F, #8caa8c);
+    background: #9dab86;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,25 +19,24 @@
 
 .quotes-container {
     display: flex;
-  background: linear-gradient(
-    to left top,
-    rgba(255, 255, 255, 0.8),
-    rgba(255, 255, 255, 0.5)
-  );
+  background: #ded7b1;
   border-radius: 2px;
   margin: 20px;
   padding: 20px;
-  box-shadow: 6px 6px 6px rgba(122, 122, 122, 0.5);
+  box-shadow: 6px 6px 6px rgba(122, 122, 122, 0.7);
   justify-content: space-between;
 }
 .quote-info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    color: #2F4F4F;
+    color: #433d3c;
+    font-size: 1.1rem;
     font-weight: 500;
     opacity: 0.8;
   }
-
+  .user {
+    font-weight: bold;
+  }
 
   /* Inputs */

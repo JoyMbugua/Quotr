@@ -13,3 +13,17 @@
     color: #333;
     margin-bottom: 1em;
 }
+.alert {
+    background: #efd9d1;
+    color: brown;
+    padding: 1em;
+    font-size: 1rem;
+}
+
+.btn-success {
+    background-color: #944e6c;
+    color: white;
+    border: 0;
+    border-radius: 1.5px;
+    padding: 15px;
+}
