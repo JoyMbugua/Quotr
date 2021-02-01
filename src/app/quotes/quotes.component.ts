@@ -13,14 +13,14 @@ quotes: Quote[] = [
   new Quote("Njuguna Mwangi", "You may be disappointed if you fail, but you are doomed if you don't try.", "Beverly Sills", new Date(2021,0,13)),
   new Quote("Ada Lovelace", "You shouldn't focus on why you cant do something, which is what most people do. You should focus on why perhaps you can, and be one of the exceptions.", "Steve Case", new Date(2021,0,30))
 ]
-  addNewQuote(quote){
+  addNewQuote(quote): void{
     quote.postedDate = new Date();
     this.quotes.unshift(quote);
   }
 
-  completeQuote(isComplete, index){
+  completeQuote(isComplete, index): void{
 
-    let deleteAction = confirm(`Are you sure you want to remove this quote?`);
+    let deleteAction: boolean = confirm(`Are you sure you want to remove this quote?`);
     if(deleteAction){
       this.quotes.splice(index,1);
     }

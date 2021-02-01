@@ -3,10 +3,7 @@
     grid-template-columns: 50% auto;
 }
 
-.dark {
-    background: #2F4F4F;
-    color: wheat;
-}
+
 
 .light {
     background: #8FBC8F;

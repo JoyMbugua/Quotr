@@ -7,7 +7,7 @@
 
    <label for="description">Entry:</label>
     <textarea type="text" class="regular" rows="8" placeholder="Quote..." [(ngModel)]="newQuote.description" #description='ngModel' name='description' required>
-        
+
     </textarea>
     <br>
 
@@ -15,5 +15,5 @@
     <input type="text" class="regular" [(ngModel)]="newQuote.author" #author='ngModel' placeholder="Author" name='author' required>
 
 
-    <button type="submit" class="btn btn-success">Add Quote</button>
+    <button type="submit" class="btn btn-success">Post</button>
 </form>
