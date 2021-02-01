@@ -38,5 +38,9 @@
   .user {
     font-weight: bold;
   }
+  .form-caption {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
 
   /* Inputs */
